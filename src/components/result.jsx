@@ -45,14 +45,15 @@ export const Result = () => {
 
   return (
     <div className="p-5 bg-gray-50 shadow-md rounded-lg">
-      <h1 className="text-lg font-bold mb-3">Result</h1>
+      <h1 className="text-2xl font-bold mb-3">Result</h1>
       {loading ? (
         <div className="flex items-center justify-center h-64">
-          <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500"></div>
-          <p className="ml-3 text-blue-500 font-medium">Loading data...</p>
+          <div className="animate-spin rounded-full h-10 w-10 border-t-4"></div>
+          <p className="ml-3 font-medium">Loading data...</p>
         </div>
       ) : dummyData.length > 0 ? (
-        <div className="w-full h-64">
+        <div className="w-full h-full">
+          <div className="text-lg font-semibold">{query}</div>
          <BarChart
     width={500}
     height={300}

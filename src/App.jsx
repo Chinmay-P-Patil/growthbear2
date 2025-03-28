@@ -1,9 +1,6 @@
-
-
 import './App.css'
 import { Result } from './components/result'
 import { History } from './components/history'
-
 import { Input } from './components/input'
 import { Provider } from 'react-redux'
 import { store } from './store'
@@ -11,11 +8,15 @@ import { store } from './store'
 function App() {
   return (
     <>
-    <Provider store={store}>
+      <div className='px-10 flex flex-col gap-10'>
+        <div className='text-4xl font-semibold'>Analytics Dashboard</div>
+      <Provider store={store}>
       <Input />
       <Result />
       <History />
     </Provider>  
+      </div>
+   
     </>
   )
 }
