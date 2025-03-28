@@ -68,7 +68,11 @@ export const Result = () => {
   </BarChart>
         </div>
       ) : (
-        <p className="text-gray-600">No relevant data found for the query.</p>
+        <>
+        <p className="text-gray-600">No relevant data found for the query.</p><br />
+        <p>query should consist of keyword sales or profit</p>
+        </>
+        
       )}
     </div>
   );
