@@ -14,3 +14,10 @@ The dashboard allows users to input business-related queries (e.g., "sales" or "
 - **Loading State**: Shows a spinner during mock data processing (1.5-second delay).
 - **Query History**: Tracks previous queries using Redux state management.
 - **Responsive Design**: Adapts to various screen sizes with a flexible layout
+
+## Tech stack
+- ReactJs
+- Redux (global state management)
+- TailwindCSS
+- recharts (Data Visualization)
+- Vercel 
