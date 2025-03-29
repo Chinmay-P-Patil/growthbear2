@@ -8,7 +8,7 @@ import { store } from './store'
 function App() {
   return (
     <>
-      <div className='px-10 flex flex-col gap-10'>
+      <div className='px-5 flex flex-col gap-10'>
         <div className='text-4xl font-semibold'>Analytics Dashboard</div>
       <Provider store={store}>
       <Input />
